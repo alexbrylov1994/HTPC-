@@ -1,0 +1,46 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="HTPC_Project.DirectionalArrowControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="50">
+    <UserControl.Resources>
+        <Storyboard x:Key="Select">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="DirectionalArrow">
+                <EasingColorKeyFrame KeyTime="0" Value="#3FFA7A7A"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#BFFA7A7A"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="DirectionalArrow">
+                <EasingColorKeyFrame KeyTime="0" Value="#BFFA7A7A"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FFFA7A7A"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MouseLeave">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="DirectionalArrow">
+                <EasingColorKeyFrame KeyTime="0" Value="#BFFA7A7A"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#3FFA7A7A"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="DirectionalArrow">
+                <EasingColorKeyFrame KeyTime="0" Value="#BFFA7A7A"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#BFFA7A7A"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="DirectionalArrow">
+            <BeginStoryboard x:Name="Select_BeginStoryboard" Storyboard="{StaticResource Select}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="DirectionalArrow">
+            <BeginStoryboard x:Name="MouseLeave_BeginStoryboard" Storyboard="{StaticResource MouseLeave}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+    </UserControl.Triggers>
+    <Grid>
+
+        <ed:BlockArrow x:Name="DirectionalArrow" Fill="#3FFA7A7A" Orientation="Down" Stroke="#BFFA7A7A"/>
+
+    </Grid>
+</UserControl>

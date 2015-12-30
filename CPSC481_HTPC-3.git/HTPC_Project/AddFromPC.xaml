@@ -1,0 +1,194 @@
+﻿<UserControl x:Class="HTPC_Project.AddFromPC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Graphics/images-4.jpg"/>
+        </Grid.Background>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="133,124,0,0" VerticalAlignment="Top" Width="151" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy" Content="" HorizontalAlignment="Left" Margin="133,247,0,0" VerticalAlignment="Top" Width="151" Height="86" Opacity="0.33" >
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy1" Content="" HorizontalAlignment="Left" Margin="133,386,0,0" VerticalAlignment="Top" Width="151" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy2" Content="Netflix" HorizontalAlignment="Left" Margin="133,526,0,0" VerticalAlignment="Top" Width="151" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy3" Content="" HorizontalAlignment="Left" Margin="382,124,0,0" VerticalAlignment="Top" Width="154" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy4" Content="" HorizontalAlignment="Left" Margin="382,247,0,0" VerticalAlignment="Top" Width="154" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy5" Content="" HorizontalAlignment="Left" Margin="382,386,0,0" VerticalAlignment="Top" Width="154" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy6" Content="" HorizontalAlignment="Left" Margin="382,526,0,0" VerticalAlignment="Top" Width="154" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Generic-Folder-Lavender-icon.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy7" Content="" HorizontalAlignment="Left" Margin="617,124,0,0" VerticalAlignment="Top" Width="147" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/Generic-Folder-Lavender-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy8" Content="" HorizontalAlignment="Left" Margin="617,247,0,0" VerticalAlignment="Top" Width="147" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/Generic-Folder-Lavender-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy9" Content="" HorizontalAlignment="Left" Margin="617,386,0,0" VerticalAlignment="Top" Width="147" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/Generic-Folder-Lavender-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy10" Content="" HorizontalAlignment="Left" Margin="617,526,0,0" VerticalAlignment="Top" Width="147" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/Generic-Folder-Lavender-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy11" Content="" HorizontalAlignment="Left" Margin="846,124,0,0" VerticalAlignment="Top" Width="85" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/plus.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy12" Content="" HorizontalAlignment="Left" Margin="846,247,0,0" VerticalAlignment="Top" Width="85" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/plus.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy13" Content="" HorizontalAlignment="Left" Margin="846,386,0,0" VerticalAlignment="Top" Width="85" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/plus.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy14" Content="" HorizontalAlignment="Left" Margin="846,526,0,0" VerticalAlignment="Top" Width="85" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/plus.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy15" Content="" HorizontalAlignment="Left" Margin="289,124,0,0" VerticalAlignment="Top" Width="39" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy16" Content="" HorizontalAlignment="Left" Margin="289,247,0,0" VerticalAlignment="Top" Width="39" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy17" Content="" HorizontalAlignment="Left" Margin="289,386,0,0" VerticalAlignment="Top" Width="39" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy18" Content="" HorizontalAlignment="Left" Margin="289,526,0,0" VerticalAlignment="Top" Width="39" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy19" Content="" HorizontalAlignment="Left" Margin="541,124,0,0" VerticalAlignment="Top" Width="31" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy20" Content="" HorizontalAlignment="Left" Margin="541,247,0,0" VerticalAlignment="Top" Width="31" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy21" Content="" HorizontalAlignment="Left" Margin="541,386,0,0" VerticalAlignment="Top" Width="31" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy22" Content="" HorizontalAlignment="Left" Margin="541,526,0,0" VerticalAlignment="Top" Width="31" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy23" Content="" HorizontalAlignment="Left" Margin="769,124,0,0" VerticalAlignment="Top" Width="39" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy24" Content="" HorizontalAlignment="Left" Margin="769,247,0,0" VerticalAlignment="Top" Width="39" Height="86" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy25" Content="" HorizontalAlignment="Left" Margin="769,386,0,0" VerticalAlignment="Top" Width="39" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy26" Content="" HorizontalAlignment="Left" Margin="769,526,0,0" VerticalAlignment="Top" Width="39" Height="81" Opacity="0.33">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Graphics/3dots.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label1" Content="Movies" HorizontalAlignment="Left" Margin="35,93,0,0" VerticalAlignment="Top" Height="44" Width="91" FontSize="24" FontWeight="Bold" Background="#00000000" Opacity="0.33"/>
+        <Label x:Name="label1_Copy" Content="Songs" HorizontalAlignment="Left" Margin="35,216,0,0" VerticalAlignment="Top" Height="48" Width="79" FontSize="24" FontWeight="Bold" Background="#00000000" Opacity="0.33"/>
+        <Label x:Name="label1_Copy1" Content="Pictures" HorizontalAlignment="Left" Margin="35,355,0,0" VerticalAlignment="Top" Height="49" Width="98" FontSize="24" FontWeight="Bold" Background="#00000000" Opacity="0.33"/>
+        <Label x:Name="label1_Copy2" Content="Plugins&#xA;" HorizontalAlignment="Left" Margin="35,495,0,0" VerticalAlignment="Top" Height="75" Width="91" FontSize="24" FontWeight="Bold" Background="#00000000" Opacity="0.33"/>
+        <Grid Margin="-2,-17,-3,607" RenderTransformOrigin="0.5,0.5" Opacity="0.3">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="179.983"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.Background>
+                <ImageBrush ImageSource="Graphics/topbar.png"/>
+            </Grid.Background>
+
+
+        </Grid>
+        <Label x:Name="label_Copy1" Content="11:11 pm&#xA;" HorizontalAlignment="Left" Margin="450,0,0,0" VerticalAlignment="Top" FontSize="18.667" Opacity="0.3"/>
+        <Button x:Name="button4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="41" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/icon-ios7-arrow-back-128.png"/>
+            </Button.Background>
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="509" Margin="176,98,0,0" VerticalAlignment="Top" Width="665" Background="#FF44444B">
+            <Button Content="" HorizontalAlignment="Left" Margin="615,0,0,0" VerticalAlignment="Top" Width="50" Height="36">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/close_window-.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Label Content="Add File from PC" HorizontalAlignment="Left" Margin="234,0,0,0" VerticalAlignment="Top" Height="39" Width="186" FontSize="22" FontWeight="Bold"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="455" VerticalAlignment="Top" Width="645" Source="Graphics/FileExploer.png" Stretch="Fill" Margin="10,44,0,0"/>
+        </Grid>
+        <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" Margin="939,0,0,0" VerticalAlignment="Top" Width="41" Height="36" RenderTransformOrigin="1.242,-5.833">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/menu-alt-512.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</UserControl>

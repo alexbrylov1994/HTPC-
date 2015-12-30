@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="HTPC_Project.Description"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid x:Name="grid" Background="#FF1E1E1E">
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="47" Margin="10,76,0,0" VerticalAlignment="Top" Width="60" Source="Graphics/backbutton-2.png" OpacityMask="#7F000000"/>
+        <Label x:Name="label" Content="Awesome Music" HorizontalAlignment="Left" Margin="75,98,0,0" VerticalAlignment="Top" Height="78" Width="440" Foreground="#BFBAB1C6" FontFamily="Arial Black" FontSize="48" Background="{x:Null}"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="75,204,0,0" TextWrapping="Wrap" Text="Sometimes when listening to music, you can't help but think &quot;Awesome,&quot; what if all your music was like that?" VerticalAlignment="Top" Height="75" Width="440" FontFamily="Arial Black" FontWeight="Bold" Foreground="#BFBAB1C6" FontSize="21.333"/>
+        <Button x:Name="button" Content="Add Service" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="778,461,0,0" VerticalAlignment="Top" Width="204" Background="#7F363636" Height="37" FontFamily="Arial Black" FontSize="24" Foreground="#BFBAB1C6" BorderBrush="#7F464646"/>
+        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" Margin="460,536,0,0" VerticalAlignment="Top" Width="80" Height="60" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Home-Button.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</UserControl>

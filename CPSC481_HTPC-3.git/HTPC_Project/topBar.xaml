@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="HTPC_Project.topBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid x:Name="gridBar">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="988" Source="Graphics/top_bar.png" Stretch="Fill" Margin="4,0,0,0"/>
+        <TextBlock x:Name="timerText" HorizontalAlignment="Left" Height="38" Margin="453,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="207" FontSize="18.667" FontWeight="Bold"/>
+        <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" Margin="919,0,0,0" VerticalAlignment="Top" Width="42" Height="48" RenderTransformOrigin="1.242,-5.833" BorderThickness="0" Click="button_Copy3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/menu-alt-512.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="backButton" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="48" BorderThickness="0" Margin="10,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/icon-ios7-arrow-back-128.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="HTPC_Project.WatchPCMusicBand"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid x:Name="WatchPCMusicBand_Grid" RenderTransformOrigin="0.5,0.5" Margin="0,1,0.333,-1.333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Graphics/images-4.jpg"/>
+        </Grid.Background>
+
+        <StackPanel x:Name="StackPanel" HorizontalAlignment="Left" Height="481" Margin="175,125,0,0" VerticalAlignment="Top" Width="810" Background="#7F000000" Grid.Row="1"/>
+        <Label x:Name="label1" Content="Rock" HorizontalAlignment="Left" Margin="5,121,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F000000" Grid.Row="1"/>
+        <Label x:Name="label_Copy5" Content="Pop" HorizontalAlignment="Left" Margin="5,154,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000" Grid.Row="1"/>
+        <Label x:Name="label_Copy6" Content="Alternitive" HorizontalAlignment="Left" Margin="5,187,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000" Grid.Row="1"/>
+        <Label x:Name="label_Copy7" Content="Indie" HorizontalAlignment="Left" Margin="5,220,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000" Grid.Row="1"/>
+        <Label x:Name="label_Copy" Content="Playlists" HorizontalAlignment="Left" Margin="5,253,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000" Grid.Row="1" RenderTransformOrigin="0.5,0.5"/>
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="60" Margin="192,125,0,0" VerticalAlignment="Top" Width="60" Source="Graphics/icon-ios7-arrow-back-128.png" OpacityMask="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="PARAMORE" HorizontalAlignment="Left" Margin="257,135,0,0" VerticalAlignment="Top" Height="50" Width="259" Foreground="#BFBAB1C6" FontFamily="Arial Black" FontSize="40" Grid.RowSpan="2"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="138" Margin="192,222,0,0" VerticalAlignment="Top" Width="136" Source="Graphics/Paramore.png" Grid.RowSpan="2"/>
+        <Button x:Name="button" Content="Play All" HorizontalAlignment="Left" Margin="192,190,0,0" VerticalAlignment="Top" Width="136" Height="27" Background="#7F000000" Foreground="#BFBAB1C6" FontFamily="Arial Black" FontSize="18.667" BorderBrush="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy" Content="For a Pessimist I'm Pretty Optimistic" HorizontalAlignment="Left" Margin="516,190,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Foreground="#BFBAB1C6" Background="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy1" Content="Thats What You Get" HorizontalAlignment="Left" Margin="516,226,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Background="#7FBAB1C6" Foreground="#BF000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy2" Content="Hallelujah" HorizontalAlignment="Left" Margin="516,262,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Foreground="#BFBAB1C6" Background="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy3" Content="Misery Business" HorizontalAlignment="Left" Margin="516,298,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Background="#7FBAB1C6" Foreground="#BF000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy4" Content="When it Rains" HorizontalAlignment="Left" Margin="516,334,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Foreground="#BFBAB1C6" Background="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy5" Content="Let the Flames Begin" HorizontalAlignment="Left" Margin="516,370,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Background="#7FBAB1C6" Foreground="#BF000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy6" Content="Miracle" HorizontalAlignment="Left" Margin="516,406,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Foreground="#BFBAB1C6" Background="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy7" Content="Crushcrushcrush" HorizontalAlignment="Left" Margin="516,442,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Background="#7FBAB1C6" Foreground="#BF000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy8" Content="We Are Broken" HorizontalAlignment="Left" Margin="516,478,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Foreground="#BFBAB1C6" Background="#7F000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy9" Content="Fences" HorizontalAlignment="Left" Margin="516,514,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Background="#7FBAB1C6" Foreground="#BF000000" Grid.RowSpan="2"/>
+        <Label x:Name="label1_Copy11" Content="Born For this" HorizontalAlignment="Left" Margin="516,550,0,0" VerticalAlignment="Top" Width="464" Height="36" FontFamily="Arial Black" FontSize="21.333" Foreground="#BFBAB1C6" Background="#7F000000" Grid.RowSpan="2"/>
+        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" Margin="471,599,0,0" VerticalAlignment="Top" Width="80" Height="60" BorderThickness="0" Grid.RowSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Home-Button.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="29" Margin="397,60,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="202"/>
+
+    </Grid>
+</UserControl>

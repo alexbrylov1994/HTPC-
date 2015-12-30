@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="HTPC_Project.PluginInstalation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid x:Name="grid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Graphics/images-4.jpg"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="471,599,0,0" VerticalAlignment="Top" Width="80" Height="60" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Home-Button.png"/>
+            </Button.Background>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="520" Margin="116,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="802" RadiusY="23" RadiusX="23" Fill="#FF44444B" Opacity="0.85"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="36" Margin="852,84,0,0" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/close_window-.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Plug-in List" HorizontalAlignment="Left" Margin="450,81,0,0" VerticalAlignment="Top" Height="39" Width="197" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="List:" HorizontalAlignment="Left" Margin="385,163,0,0" VerticalAlignment="Top" FontSize="18.667" FontWeight="Bold"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="132" Margin="292,296,0,0" VerticalAlignment="Top" Width="135" Source="Graphics/netflix-2-icon.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="48" Margin="460,354,0,0" VerticalAlignment="Top" Width="297" Source="Graphics/controls-progress-typical.png.en.png" Stretch="Fill" Opacity="0.85"/>
+        <Label x:Name="label_Copy3" Content="Downloading" HorizontalAlignment="Left" Margin="460,314,0,0" VerticalAlignment="Top" FontSize="18.667" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="450,163,0,0" VerticalAlignment="Top" Width="189" Height="35" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="2" FontSize="20">
+            <ComboBoxItem Content="YouTube" FontSize="20"/>
+            <ComboBoxItem Content="Twitch" FontSize="20"/>
+            <ComboBoxItem Content="Netflix" FontSize="20"/>
+            <ComboBoxItem Content="Hulu" FontSize="20"/>
+        </ComboBox>
+
+    </Grid>
+</UserControl>

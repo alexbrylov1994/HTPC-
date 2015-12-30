@@ -1,0 +1,42 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="HTPC_Project.WatchPCMovies"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid x:Name="WatchPCMovies_Grids" RenderTransformOrigin="0.5,0.5" Margin="0,1,0.333,-1.333">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF610000" Offset="0"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Button x:Name="homeButton" Content="" HorizontalAlignment="Left" Margin="471,599,0,0" VerticalAlignment="Top" Width="80" Height="60" BorderThickness="0" Click="homeButton_Click" Opacity="0.5">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/red-home-button.png"/>
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="Graphics/red-home-button.png"/>
+            </Button.OpacityMask>
+        </Button>
+        <Grid x:Name="GenreGrid" Margin="19.834,120,9.833,101.333" Height="479" d:IsHidden="True">
+            <ScrollViewer x:Name="Scroller" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden" HorizontalContentAlignment="Left" PanningMode="VerticalOnly" VerticalContentAlignment="Top" PreviewMouseWheel="Scroller_PreviewMouseWheel">
+                <UniformGrid x:Name="RectangleGrid" Columns="1"/>
+            </ScrollViewer>
+        </Grid>
+        <local:DirectionalArrowControl x:Name="DownArrow" HorizontalAlignment="Left" Height="50" Margin="19.834,0,0,51.333" VerticalAlignment="Bottom" Width="50" MouseDown="DownArrow_MouseDown"/>
+        <local:DirectionalArrowControl x:Name="UpArrow" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Margin="19.834,70,0,0" MouseDown="UpArrow_MouseDown" />
+        <Grid x:Name="SearchGrid" Margin="19.834,120,9.833,101.333" Height="479">
+            <ScrollViewer x:Name="SearchScroller" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" HorizontalContentAlignment="Left" PanningMode="VerticalOnly" VerticalContentAlignment="Top" PreviewMouseWheel="Scroller_PreviewMouseWheel">
+                <UniformGrid x:Name="ListofMovies" Columns="2" VerticalAlignment="Top" Height="479"/>
+            </ScrollViewer>
+        </Grid>
+        <TextBox x:Name="searchBox" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Margin="310,70,284.667,0" Background="#3FFF0000" BorderBrush="{x:Null}" Foreground="#BFFFFFFF" SelectionBrush="#B27D4552" MouseDown="searchBox_MouseDown" TextChanged="searchBox_TextChanged" FontSize="29.333"/>
+
+
+
+    </Grid>
+</UserControl>

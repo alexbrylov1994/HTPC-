@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9564CDE6-7562-437E-82F2-6BB47C7F48E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTPC_Project</RootNamespace>
+    <AssemblyName>HTPC_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Effects, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Add Song.xaml.cs">
+      <DependentUpon>Add Song.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddFromPCController.xaml.cs">
+      <DependentUpon>AddFromPCController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumButton.xaml.cs">
+      <DependentUpon>AlbumButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumItem.xaml.cs">
+      <DependentUpon>AlbumItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumWindow.xaml.cs">
+      <DependentUpon>AlbumWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreYouSure.xaml.cs">
+      <DependentUpon>AreYouSure.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AreYouSureDelete.xaml.cs">
+      <DependentUpon>AreYouSureDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMessage.xaml.cs">
+      <DependentUpon>DeleteMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Description.xaml.cs">
+      <DependentUpon>Description.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DirectionalArrowControl.xaml.cs">
+      <DependentUpon>DirectionalArrowControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="dotsControl.xaml.cs">
+      <DependentUpon>dotsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenreControl.xaml.cs">
+      <DependentUpon>GenreControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GoDownButtonControl.xaml.cs">
+      <DependentUpon>GoDownButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HuluWindow.xaml.cs">
+      <DependentUpon>HuluWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IconLoader.cs" />
+    <Compile Include="InstallOptions.xaml.cs">
+      <DependentUpon>InstallOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstalServices.xaml.cs">
+      <DependentUpon>InstalServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindowContoller.xaml.cs">
+      <DependentUpon>MainWindowContoller.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="menuController.xaml.cs">
+      <DependentUpon>menuController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MovieContainerControl.xaml.cs">
+      <DependentUpon>MovieContainerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MovieLists.cs" />
+    <Compile Include="MusicPlaying.xaml.cs">
+      <DependentUpon>MusicPlaying.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MusicWindow.xaml.cs">
+      <DependentUpon>MusicWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.cs" />
+    <Compile Include="NetflixSearch.xaml.cs">
+      <DependentUpon>NetflixSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="playlistItem.xaml.cs">
+      <DependentUpon>playlistItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="playlistMake.xaml.cs">
+      <DependentUpon>playlistMake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="playlistWindow.xaml.cs">
+      <DependentUpon>playlistWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rating.xaml.cs">
+      <DependentUpon>rating.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScrollingElement.xaml.cs">
+      <DependentUpon>ScrollingElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchControl.xaml.cs">
+      <DependentUpon>SearchControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchNetflixMovies.xaml.cs">
+      <DependentUpon>SearchNetflixMovies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShuffleButton.xaml.cs">
+      <DependentUpon>ShuffleButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SongButton.xaml.cs">
+      <DependentUpon>SongButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SongItem.xaml.cs">
+      <DependentUpon>SongItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spotify search.xaml.cs">
+      <DependentUpon>Spotify search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuscribeMessage.xaml.cs">
+      <DependentUpon>SuscribeMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="topBar.xaml.cs">
+      <DependentUpon>topBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="topBarMain.xaml.cs">
+      <DependentUpon>topBarMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MoreInfoIcon.xaml.cs">
+      <DependentUpon>MoreInfoIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WatchFromPc.xaml.cs">
+      <DependentUpon>WatchFromPc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WatchPCMovies.xaml.cs">
+      <DependentUpon>WatchPCMovies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WatchPCMoviesDescription.xaml.cs">
+      <DependentUpon>WatchPCMoviesDescription.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WatchPCMusic.xaml.cs">
+      <DependentUpon>WatchPCMusic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WatchPCMusicBand.xaml.cs">
+      <DependentUpon>WatchPCMusicBand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WatchPCMusicSinglePlaylist.xaml.cs">
+      <DependentUpon>WatchPCMusicSinglePlaylist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window_3Dots.xaml.cs">
+      <DependentUpon>Window_3Dots.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccountSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Add Song.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddFromPC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddFromPCController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AlbumButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AlbumItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AlbumWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AreYouSure.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AreYouSureDelete.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeleteMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Description.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DirectionalArrowControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="dotsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GenreControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GoDownButtonControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HuluWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InstalationComplete.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InstallOptions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InstalServices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListenPCBand.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListenToBand.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ListOfMovies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LoadingScreennew.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AccountSettings.xaml.cs">
+      <DependentUpon>AccountSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddFromPC.xaml.cs">
+      <DependentUpon>AddFromPC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InstalationComplete.xaml.cs">
+      <DependentUpon>InstalationComplete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListenPCBand.xaml.cs">
+      <DependentUpon>ListenPCBand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListenToBand.xaml.cs">
+      <DependentUpon>ListenToBand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfMovies.xaml.cs">
+      <DependentUpon>ListOfMovies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreennew.xaml.cs">
+      <DependentUpon>LoadingScreennew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MainWindowContoller.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow_3Dots.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow_Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="menuController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MovieContainerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MovieInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MoviePlayBack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MusicPlayBack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MusicPlaying.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MusicWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Netflix search.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NetflixMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NetflixNative.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NetflixSearch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParentalControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PictureWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="playlistItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="playlistMake.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Playlists.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="playlistWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PluginAdditionalServices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PluginInstalation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PluginInstallation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PluginSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PluginSelectionCopy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PluginThemes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="rating.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ScrollingElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchNetflixMovies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShuffleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SongButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SongItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Spotify search.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SuscribeMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="topBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="topBarMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MoreInfoIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WatchFromPc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WatchPCMovies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WatchPCMoviesDescription.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WatchPCMusic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WatchPCMusicBand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WatchPCMusicSinglePlaylist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window_3Dots.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow_3Dots.xaml.cs">
+      <DependentUpon>MainWindow_3Dots.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow_Menu.xaml.cs">
+      <DependentUpon>MainWindow_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MovieInfo.xaml.cs">
+      <DependentUpon>MovieInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MoviePlayBack.xaml.cs">
+      <DependentUpon>MoviePlayBack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MusicPlayBack.xaml.cs">
+      <DependentUpon>MusicPlayBack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Netflix search.xaml.cs">
+      <DependentUpon>Netflix search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NetflixMain.xaml.cs">
+      <DependentUpon>NetflixMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NetflixNative.xaml.cs">
+      <DependentUpon>NetflixNative.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParentalControls.xaml.cs">
+      <DependentUpon>ParentalControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PictureWindow.xaml.cs">
+      <DependentUpon>PictureWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Playlists.xaml.cs">
+      <DependentUpon>Playlists.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PluginAdditionalServices.xaml.cs">
+      <DependentUpon>PluginAdditionalServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PluginInstalation.xaml.cs">
+      <DependentUpon>PluginInstalation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PluginInstallation.xaml.cs">
+      <DependentUpon>PluginInstallation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PluginSelection.xaml.cs">
+      <DependentUpon>PluginSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PluginSelectionCopy.xaml.cs">
+      <DependentUpon>PluginSelectionCopy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PluginThemes.xaml.cs">
+      <DependentUpon>PluginThemes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Design\projectGuides.guides" />
+    <None Include="Graphics\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\3dots.png" />
+    <Resource Include="Graphics\5-star-rating.png" />
+    <Resource Include="Graphics\616jNhqhg8L.jpg" />
+    <Resource Include="Graphics\Arrows-Back-icon.png" />
+    <Resource Include="Graphics\Avenged Sevenfold.jpg" />
+    <Resource Include="Graphics\avengers_poster.jpg" />
+    <Resource Include="Graphics\back-button.png" />
+    <Resource Include="Graphics\backbutton-2.png" />
+    <Resource Include="Graphics\backbutton.png" />
+    <Resource Include="Graphics\Black_ice_red.jpg" />
+    <Resource Include="Graphics\black_square.png" />
+    <Resource Include="Graphics\Brenan.jpeg" />
+    <Resource Include="Graphics\car ride.jpg" />
+    <Resource Include="Graphics\check-box-md-gray.png" />
+    <Resource Include="Graphics\close-button.png" />
+    <Resource Include="Graphics\Close-icon.png" />
+    <Resource Include="Graphics\close_window-.png" />
+    <Resource Include="Graphics\controls-progress-typical.png.en.png" />
+    <Resource Include="Graphics\dvd_controls 2.png" />
+    <Resource Include="Graphics\Ehud.JPG" />
+    <Resource Include="Graphics\favorite_button.png" />
+    <Resource Include="Graphics\FileExploer.png" />
+    <Resource Include="Graphics\folder-generic.png" />
+    <Resource Include="Graphics\Generic TV Icon.png" />
+    <Resource Include="Graphics\Generic-Folder-Lavender-icon.png" />
+    <Resource Include="Graphics\Home-Button.png" />
+    <Resource Include="Graphics\Home.png" />
+    <Resource Include="Graphics\icon-ios7-arrow-back-128.png" />
+    <Resource Include="Graphics\Icon_31-128.png" />
+    <Resource Include="Graphics\images-11.jpg" />
+    <Resource Include="Graphics\images-2.jpeg" />
+    <Resource Include="Graphics\images-2.jpg" />
+    <Resource Include="Graphics\images-3.jpeg" />
+    <Resource Include="Graphics\images-4.jpg" />
+    <Resource Include="Graphics\images.jpeg" />
+    <Resource Include="Graphics\Insomnium_One_for_Sorrow_album_cover.jpg" />
+    <Resource Include="Graphics\large_140ewbWv8qHStD3mlBDvvGd0Zvu.jpg" />
+    <Resource Include="Graphics\left.png" />
+    <Resource Include="Graphics\maxresdefault.jpg" />
+    <Resource Include="Graphics\menu-alt-512.png" />
+    <Resource Include="Graphics\menuitem_thumb.png" />
+    <Resource Include="Graphics\MoviePoster.jpg" />
+    <Resource Include="Graphics\MusicCover.png" />
+    <Resource Include="Graphics\Music_buttons.png" />
+    <Resource Include="Graphics\netflix-2-icon.png" />
+    <Resource Include="Graphics\Netflix.png" />
+    <Resource Include="Graphics\netflix11.png" />
+    <Resource Include="Graphics\Nicleback Album.jpg" />
+    <Resource Include="Graphics\Open1.png" />
+    <Resource Include="Graphics\Open2.png" />
+    <Resource Include="Graphics\Paramore.png" />
+    <Resource Include="Graphics\Phobia-Abaddon-Incarnate5.jpg" />
+    <Resource Include="Graphics\play1.png" />
+    <Resource Include="Graphics\play2.png" />
+    <Resource Include="Graphics\play3.png" />
+    <Resource Include="Graphics\play4.png" />
+    <Resource Include="Graphics\plus.png" />
+    <Resource Include="Graphics\right.png" />
+    <Resource Include="Graphics\Screen Shot 2015-10-30 at 12.15.40 PM.png" />
+    <Resource Include="Graphics\Skyfall poster.jpg" />
+    <Resource Include="Graphics\spotify-1.png" />
+    <Resource Include="Graphics\Spotify.svg.png" />
+    <Resource Include="Graphics\topbar.png" />
+    <Resource Include="Graphics\top_bar.png" />
+    <Resource Include="Graphics\ui-icons-222222-256x240.png" />
+    <Resource Include="Graphics\YouTube-logo-full_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\netflix-logo.jpg" />
+    <Resource Include="Graphics\spotify-logo.jpg" />
+    <Resource Include="Graphics\youtubeplayer-xlarge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\album1%27.jpg" />
+    <Resource Include="Graphics\playlist1.png" />
+    <Resource Include="Graphics\playlist2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\album2.png" />
+    <Resource Include="Graphics\album3.png" />
+    <Resource Include="Graphics\album4.png" />
+    <Resource Include="Graphics\album5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\photolib1.png" />
+    <Resource Include="Graphics\photolib2.png" />
+    <Resource Include="Graphics\photolib3.png" />
+    <Resource Include="Graphics\photolib4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\addPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Genres\Genres.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Movies\The Dark Night Rises\Description.txt" />
+    <Resource Include="Movies\The Dark Night Rises\Poster.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Movies\Skyfall\description.txt" />
+    <Resource Include="Movies\Skyfall\poster.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Hulu-UK-Unblock-and-Watch-Hulu-Plus-outside-USA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Music\616jNhqhg8L.jpg" />
+    <Resource Include="Music\Avenged Sevenfold.jpg" />
+    <Resource Include="Music\Black_ice_red.jpg" />
+    <Resource Include="Music\Insomnium_One_for_Sorrow_album_cover.jpg" />
+    <Resource Include="Music\MusicCover.png" />
+    <Resource Include="Music\Nicleback Album.jpg" />
+    <Resource Include="Music\Paramore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Brenan.jpeg" />
+    <Resource Include="Pictures\Ehud.JPG" />
+    <Resource Include="Pictures\images-2.jpg" />
+    <Resource Include="Pictures\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\hulumain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Search.png" />
+    <Resource Include="Graphics\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\search2.png" />
+    <Resource Include="Graphics\search3.jpeg" />
+    <Resource Include="Graphics\search4.png" />
+    <Resource Include="Graphics\search5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnfavoriteImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\blankstar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\deleteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\Onestar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\playback_music_main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\red-home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Graphics\shuffle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Name="userControl" x:Class="HTPC_Project.HuluWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+            d:DesignHeight="700" d:DesignWidth="1000">
+    <UserControl.Resources>
+        <Storyboard x:Key="open">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="userControl">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource open}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Grid x:Name="grid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Graphics/hulumain.png"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="471,595,0,0" VerticalAlignment="Top" Width="80" Height="60" BorderThickness="0" Click="button_Click" >
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="Graphics/Home-Button.png"/>
+            </Button.OpacityMask>
+        </Button>
+
+    </Grid>
+</UserControl>
+

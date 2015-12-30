@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="HTPC_Project.WatchPCMoviesDescription"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTPC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid x:Name="WatchPCMoviesDescription_Grid" RenderTransformOrigin="0.5,0.5" Margin="0,1,0.333,-1.333">
+        <Grid.Background>
+            <ImageBrush ImageSource="Graphics/images-4.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="35" Margin="291,59,305.333,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="397" Background="#7F000000" FontWeight="Bold" FontSize="29.333" FontFamily="Arial Black" SelectionBrush="{x:Null}" Foreground="#BFBAB1C6" BorderBrush="#00ABADB3" TextChanged="textBox_TextChanged">
+
+        </TextBox>
+        <StackPanel x:Name="Stack" HorizontalAlignment="Left" Height="481" Margin="175,124,0,0" VerticalAlignment="Top" Width="800" Background="#7F000000"/>
+        <Label x:Name="label" Content="Action-Adventure" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F000000"/>
+        <Label x:Name="label_Copy" Content="Comedy" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000"/>
+        <Label x:Name="label_Copy2" Content="Horror" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000"/>
+        <Label x:Name="label_Copy3" Content="Romance" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Width="165" Height="28" FontFamily="Arial Black" FontWeight="Bold" FontSize="16" Foreground="#BFBAB1C6" Background="#7F464646" BorderBrush="#7F000000"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="278" Margin="252,131,0,0" VerticalAlignment="Top" Width="193" Source="Graphics/Skyfall poster.jpg"/>
+        <Label x:Name="label_Copy4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Skyfall" HorizontalAlignment="Left" Margin="252,414,0,0" VerticalAlignment="Top" Width="193" Height="58" FontFamily="Arial Black" FontSize="24" Foreground="#BFBAB1C6"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="60" Margin="187,131,0,0" VerticalAlignment="Top" Width="60" Source="Graphics/icon-ios7-arrow-back-128.png" Opacity="0.5"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="450,131,0,0" TextWrapping="Wrap" Text="MI6 OPERATIVE JAMES BOND, AGENT 007, QUESTIONS HIS LOYALTY TO HIS SUPERIOUR, M, WHEN HER PAST ACTIONS HAVE CONSEQUENCES IN THE PRESENT. WHEN MI6 ITSELF IS ATTACKED, BOND MUST TRAVEL TO SHANGHAI, SCOTLAND, INSTANBUL AND LONDON TO SEEK OUT AND ELIMINATE THE THREAT" VerticalAlignment="Top" Height="278" Width="296" Foreground="#BFBAB1C6" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="button" Content="Watch" HorizontalAlignment="Left" Margin="833,131,0,0" VerticalAlignment="Top" Width="142" Height="29" Background="#7F464646" FontFamily="Arial Black" FontSize="16" Foreground="#BFBAB1C6"/>
+        <Button x:Name="button_Copy" Content="Add To Playlist" HorizontalAlignment="Left" Margin="833,160,0,0" VerticalAlignment="Top" Width="142" Height="29" Background="#7F464646" FontFamily="Arial Black" FontSize="16" Foreground="#BFBAB1C6"/>
+        <Button x:Name="button_Copy2" Content="Delete" HorizontalAlignment="Left" Margin="833,189,0,0" VerticalAlignment="Top" Width="142" Height="29" Background="#7F464646" FontFamily="Arial Black" FontSize="16" Foreground="#BFBAB1C6"/>
+        <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" Margin="471,599,0,0" VerticalAlignment="Top" Width="80" Height="60" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="Graphics/Home-Button.png"/>
+            </Button.Background>
+        </Button>
+
+
+
+    </Grid>
+</UserControl>
